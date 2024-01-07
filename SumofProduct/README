@@ -1,0 +1,6 @@
+Assignment Specifications:
+Calculate the sum or product of a series of integers that are passed to the function sumProduct, which receives an 
+arbitrary argument list. The function has an optional input, called inMode. If this input is equal to 0 (default value), 
+then the minimum and sum of the variable-length argument are returned. 
+Otherwise, the maximum and product of the variablelength argument are returned. 
+Test your function with several calls, each with a different number of arguments.
