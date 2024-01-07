@@ -1,0 +1,4 @@
+Assignment Specifications:
+A string that is spelled identically backward and forward, like ‘radar’, is a palindrome. 
+Write a function is_palindrome that takes a string and returns True if it’s a palindrome and False
+otherwise. Your function should ignore case sensitivity (that is, ‘a’ and ‘A’ are the same), spaces, and punctuation.
