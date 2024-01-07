@@ -1,0 +1,20 @@
+Assignment Specifications:
+A prime number is an integer greater than 1 that is evenly divisible only by itself and 1. The
+Sieve of Eratosthenes is an elegant, straightforward method of finding prime numbers. The
+process for finding all primes less than K is:
+  a) Create a K-element list, called primes, with all elements initialized to True. List elements
+  with prime indices (like 2, 3, 5, 7, 11, …) will remain True. All other list elements will
+  eventually be set to False.
+  b) Starting with index 2, if a given element is True, iterate through the rest of the list and set
+  to False every element in primes whose index is a multiple of the index for the element
+  we’re currently processing. For list index 2, all elements beyond element 2 in the list that
+  have indices which are multiples of 2 (i.e., 4, 6, 8, 10, …) will be set to False.
+  c) Repeat Step (2) for the next True element. For list index 3 (which was initialized to True),
+  all elements beyond element 3 in the list that have indices which are multiples of 3 (i.e., 6,
+  9, 12, 15, …) will be set to False; and so on.
+A subtle observation (think about why this is true): You’ll need to test and set to False
+only all multiples of 2, 3, 5, 7, 11 … up to √K. This will significantly improve the
+performance of your algorithm, especially if you decide to look for large prime numbers.
+When this process completes, the list elements that are still True indicate that the index is a
+prime number. These indices can be displayed. Use a list of 10,000 elements to determine and
+display the prime numbers less than 10,000. Ignore list elements 0 and 1.
